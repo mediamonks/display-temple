@@ -1,4 +1,4 @@
-# Temple
+# Display Temple
 
 [![Travis](https://img.shields.io/travis/mediamonks/temple.svg?style=flat)](https://travis-ci.org/mediamonks/temple)
 [![npm](https://img.shields.io/npm/v/@mediamonks/temple.svg?style=flat)](https://www.npmjs.com/package/@mediamonks/temple)
@@ -6,25 +6,25 @@
 <!-- [![Code Climate](https://img.shields.io/codeclimate/github/mediamonks/seng-boilerplate.svg?maxAge=2592000)](https://codeclimate.com/github/mediamonks/seng-boilerplate) -->
 <!-- [![Coveralls](https://img.shields.io/coveralls/mediamonks/seng-boilerplate.svg?maxAge=2592000)](https://coveralls.io/github/mediamonks/seng-boilerplate?branch=master) -->
 
-This is the Richmedia Temple, used for creating richmedia units for various vendors.
+This is the Display.Monks Temple, used for creating display ads units for various vendors.
 
 ## Getting Started
 See documentation https://mediamonks.github.io/display-advertising-docs/index.html for documentation to getting started.
 
 Or
 
-View the [generated documentation](http://mediamonks.github.io/temple/).
+View the [generated documentation](http://mediamonks.github.io/display-temple/).
 
 ## Installation
 
 #### yarn
 ```sh
-yarn add @mediamonks/temple
+yarn add @mediamonks/display-temple
 ```
 
 #### npm
 ```sh
-npm i -S @mediamonks/temple
+npm i -S @mediamonks/display-temple
 ```
 
 
@@ -36,7 +36,7 @@ and [Node.js](http://nodejs.org/) installed.
 
 Clone a copy of the repo:
 ```sh
-git clone https://github.com/mediamonks/temple.git
+git clone https://github.com/mediamonks/display-temple.git
 ```
 
 Change to the seng-boilerplate directory:

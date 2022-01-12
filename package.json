@@ -1,5 +1,5 @@
 {
-  "name": "@mediamonks/temple",
+  "name": "@mediamonks/display-temple",
   "version": "6.1.6",
   "description": "This is the Display Advertising Temple, used for creating Display Advertising Units for various vendors.",
   "scripts": {
@@ -32,7 +32,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mediamonks/temple.git"
+    "url": "git+https://github.com/mediamonks/display-temple.git"
   },
   "publishConfig": {
     "access": "public"
@@ -40,9 +40,9 @@
   "author": "Mient-jan Stelling",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mediamonks/temple/issues"
+    "url": "https://github.com/mediamonks/display-temple/issues"
   },
-  "homepage": "https://github.com/mediamonks/temple#readme",
+  "homepage": "https://github.com/mediamonks/display-temple#readme",
   "devDependencies": {
     "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.5",
