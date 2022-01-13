@@ -1,78 +1,38 @@
 [
   {
-    "name": "EventDispatcherComponent#addEventListener",
-    "filePath": "src/component/EventDispatcherComponent.js",
+    "name": "FrameAnimation#play",
+    "filePath": "src/animation/FrameAnimation.js",
     "lines": [
       {
-        "lineNumber": 16,
+        "lineNumber": 90,
         "line": "  /**"
       },
       {
-        "lineNumber": 17,
+        "lineNumber": 91,
         "line": "   *"
       },
       {
-        "lineNumber": 18,
-        "line": "   * @param {string} type"
+        "lineNumber": 92,
+        "line": "   * @param {gsap.core.Timeline} timeline"
       },
       {
-        "lineNumber": 19,
-        "line": "   * @param {function} fn"
+        "lineNumber": 93,
+        "line": "   * @return {gsap.core.Timeline}"
       },
       {
-        "lineNumber": 20,
+        "lineNumber": 94,
         "line": "   */"
       },
       {
-        "lineNumber": 21,
-        "line": "  addEventListener(type, func) {"
+        "lineNumber": 95,
+        "line": "  play(tl = gsap.timeline()) {"
       }
     ],
     "codeParams": [
-      "type",
-      "func"
+      "tl"
     ],
     "docParams": [
-      "type",
-      "fn"
-    ]
-  },
-  {
-    "name": "EventDispatcherComponent#removeEventListener",
-    "filePath": "src/component/EventDispatcherComponent.js",
-    "lines": [
-      {
-        "lineNumber": 32,
-        "line": "  /**"
-      },
-      {
-        "lineNumber": 33,
-        "line": "   * Will remove your listener"
-      },
-      {
-        "lineNumber": 34,
-        "line": "   * @param type"
-      },
-      {
-        "lineNumber": 35,
-        "line": "   * @param fn"
-      },
-      {
-        "lineNumber": 36,
-        "line": "   */"
-      },
-      {
-        "lineNumber": 37,
-        "line": "  removeEventListener(type, func) {"
-      }
-    ],
-    "codeParams": [
-      "type",
-      "func"
-    ],
-    "docParams": [
-      "type",
-      "fn"
+      "timeline"
     ]
   },
   {
@@ -156,14 +116,38 @@
       },
       {
         "lineNumber": 5,
-        "line": " * @retun {Promise}"
+        "line": " *"
       },
       {
         "lineNumber": 6,
-        "line": " */"
+        "line": " * @example"
       },
       {
         "lineNumber": 7,
+        "line": " *  loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js')"
+      },
+      {
+        "lineNumber": 8,
+        "line": " *    .then((file) => console.log(file)"
+      },
+      {
+        "lineNumber": 9,
+        "line": " *  );"
+      },
+      {
+        "lineNumber": 10,
+        "line": " *"
+      },
+      {
+        "lineNumber": 11,
+        "line": " * @retun {Promise}"
+      },
+      {
+        "lineNumber": 12,
+        "line": " */"
+      },
+      {
+        "lineNumber": 13,
         "line": "export default function loadScript(url, opts = {}) {"
       }
     ],

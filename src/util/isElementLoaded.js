@@ -1,3 +1,5 @@
+import undefinedOrNull from './undefinedOrNull';
+
 /**
  * Wait for a DOM element to load.
  *
@@ -12,7 +14,7 @@
  * @returns {Promise<HTMLImageElement>}
  */
 export default function isElementLoaded(selector, time = 500) {
-  if (undefinedOrNull(str)) {
+  if (undefinedOrNull(selector)) {
     return null;
   }
 

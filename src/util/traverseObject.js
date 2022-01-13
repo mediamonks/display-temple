@@ -2,7 +2,7 @@
  * Will travel through a object and when it finds a leaf will call the function from the second argument
  *
  * @param {object} source
- * @param {function(leafValue: any, leafName: any, source: object, currPath: Array:string) => void} fn
+ * @param {function<leafValue: any, leafName: any, source: object, currPath: Array:string> => void} fn
  * @param {number} maxNesting
  * @param {Array<string>} path
  */
