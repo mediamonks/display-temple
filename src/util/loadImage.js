@@ -1,6 +1,10 @@
 /**
- * Load Image
- * @param src
+ * Loads an image and returns the image element
+ *
+ * @example
+ *  loadImage('./my_example_image.png');
+ *
+ * @param {string} src
  * @return {Promise<HTMLImageElement>}
  */
 export default function loadImage(src) {

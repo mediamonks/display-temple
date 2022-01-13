@@ -1,12 +1,18 @@
 /**
- *
  * @param {Array<HTMLElement>} copyElements
+ *
+ * @example
+ *  const title = document.body.querySelector('.title');
+ *  const ctaCopy = document.body.querySelector('.cta_copy');
+ *  fitText([title, ctaCopy]);
+ *
  */
+
 export default function fitText(...copyElements) {
   copyElements = copyElements.flat();
 
   copyElements.forEach(copyElement => {
-    if(window.gsap){
+    if (window.gsap) {
       window.gsap.set(copyElement, { clearProps: 'fontSize, lineHeight' });
     }
 
