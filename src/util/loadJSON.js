@@ -1,6 +1,10 @@
 /**
  * Load a JSON file.
- * @param url
+ * @param {String} url
+ *
+ * @example
+ *  loadJSON('https://jsonplaceholder.typicode.com/todos/1');
+ *
  * @return {Promise<any>}
  */
 export default function loadJSON(url) {

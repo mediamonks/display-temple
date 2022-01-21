@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 189,
+  "end": 512,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 7,
+      "line": 19,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 189,
+    "end": 512,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 7,
+        "line": 19,
         "column": 0
       }
     },
@@ -164,52 +164,71 @@
             "raw": "'./loadAll'"
           },
           "value": "./loadAll"
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Loads multiple files and output an array with the objects\n * @param {Array<string>} urls\n * @param {boolean} sequential\n *\n * @example\n *  loadScriptAll(['./mycustomScript.js', './mycustomScript2.js', './mycustomScript3.js'], true);\n *\n *  loadScriptAll(['./mycustomScript.png']);\n *\n * @return {Promise<Array>}\n ",
+            "start": 73,
+            "end": 395,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 0
+              },
+              "end": {
+                "line": 15,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 73,
-        "end": 188,
+        "start": 396,
+        "end": 511,
         "loc": {
           "start": {
-            "line": 4,
+            "line": 16,
             "column": 0
           },
           "end": {
-            "line": 6,
+            "line": 18,
             "column": 1
           }
         },
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 88,
-          "end": 188,
+          "start": 411,
+          "end": 511,
           "loc": {
             "start": {
-              "line": 4,
+              "line": 16,
               "column": 15
             },
             "end": {
-              "line": 6,
+              "line": 18,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 97,
-            "end": 110,
+            "start": 420,
+            "end": 433,
             "loc": {
               "start": {
-                "line": 4,
+                "line": 16,
                 "column": 24
               },
               "end": {
-                "line": 4,
+                "line": 16,
                 "column": 37
               },
               "identifierName": "loadScriptAll"
             },
-            "name": "loadScriptAll"
+            "name": "loadScriptAll",
+            "leadingComments": null
           },
           "generator": false,
           "expression": false,
@@ -217,15 +236,15 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 111,
-              "end": 115,
+              "start": 434,
+              "end": 438,
               "loc": {
                 "start": {
-                  "line": 4,
+                  "line": 16,
                   "column": 38
                 },
                 "end": {
-                  "line": 4,
+                  "line": 16,
                   "column": 42
                 },
                 "identifierName": "urls"
@@ -234,29 +253,29 @@
             },
             {
               "type": "AssignmentPattern",
-              "start": 117,
-              "end": 135,
+              "start": 440,
+              "end": 458,
               "loc": {
                 "start": {
-                  "line": 4,
+                  "line": 16,
                   "column": 44
                 },
                 "end": {
-                  "line": 4,
+                  "line": 16,
                   "column": 62
                 }
               },
               "left": {
                 "type": "Identifier",
-                "start": 117,
-                "end": 127,
+                "start": 440,
+                "end": 450,
                 "loc": {
                   "start": {
-                    "line": 4,
+                    "line": 16,
                     "column": 44
                   },
                   "end": {
-                    "line": 4,
+                    "line": 16,
                     "column": 54
                   },
                   "identifierName": "sequential"
@@ -265,15 +284,15 @@
               },
               "right": {
                 "type": "BooleanLiteral",
-                "start": 130,
-                "end": 135,
+                "start": 453,
+                "end": 458,
                 "loc": {
                   "start": {
-                    "line": 4,
+                    "line": 16,
                     "column": 57
                   },
                   "end": {
-                    "line": 4,
+                    "line": 16,
                     "column": 62
                   }
                 },
@@ -283,58 +302,58 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 137,
-            "end": 188,
+            "start": 460,
+            "end": 511,
             "loc": {
               "start": {
-                "line": 4,
+                "line": 16,
                 "column": 64
               },
               "end": {
-                "line": 6,
+                "line": 18,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "ReturnStatement",
-                "start": 141,
-                "end": 186,
+                "start": 464,
+                "end": 509,
                 "loc": {
                   "start": {
-                    "line": 5,
+                    "line": 17,
                     "column": 2
                   },
                   "end": {
-                    "line": 5,
+                    "line": 17,
                     "column": 47
                   }
                 },
                 "argument": {
                   "type": "CallExpression",
-                  "start": 148,
-                  "end": 185,
+                  "start": 471,
+                  "end": 508,
                   "loc": {
                     "start": {
-                      "line": 5,
+                      "line": 17,
                       "column": 9
                     },
                     "end": {
-                      "line": 5,
+                      "line": 17,
                       "column": 46
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 148,
-                    "end": 155,
+                    "start": 471,
+                    "end": 478,
                     "loc": {
                       "start": {
-                        "line": 5,
+                        "line": 17,
                         "column": 9
                       },
                       "end": {
-                        "line": 5,
+                        "line": 17,
                         "column": 16
                       },
                       "identifierName": "loadAll"
@@ -344,15 +363,15 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 156,
-                      "end": 160,
+                      "start": 479,
+                      "end": 483,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 17,
                           "column": 17
                         },
                         "end": {
-                          "line": 5,
+                          "line": 17,
                           "column": 21
                         },
                         "identifierName": "urls"
@@ -361,15 +380,15 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 162,
-                      "end": 172,
+                      "start": 485,
+                      "end": 495,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 17,
                           "column": 23
                         },
                         "end": {
-                          "line": 5,
+                          "line": 17,
                           "column": 33
                         },
                         "identifierName": "sequential"
@@ -378,15 +397,15 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 174,
-                      "end": 184,
+                      "start": 497,
+                      "end": 507,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 17,
                           "column": 35
                         },
                         "end": {
-                          "line": 5,
+                          "line": 17,
                           "column": 45
                         },
                         "identifierName": "loadScript"
@@ -399,14 +418,66 @@
             ],
             "directives": []
           },
-          "leadingComments": [],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Loads multiple files and output an array with the objects\n * @param {Array<string>} urls\n * @param {boolean} sequential\n *\n * @example\n *  loadScriptAll(['./mycustomScript.js', './mycustomScript2.js', './mycustomScript3.js'], true);\n *\n *  loadScriptAll(['./mycustomScript.png']);\n *\n * @return {Promise<Array>}\n ",
+              "start": 73,
+              "end": 395,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 0
+                },
+                "end": {
+                  "line": 15,
+                  "column": 3
+                }
+              }
+            }
+          ],
           "trailingComments": []
-        }
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Loads multiple files and output an array with the objects\n * @param {Array<string>} urls\n * @param {boolean} sequential\n *\n * @example\n *  loadScriptAll(['./mycustomScript.js', './mycustomScript2.js', './mycustomScript3.js'], true);\n *\n *  loadScriptAll(['./mycustomScript.png']);\n *\n * @return {Promise<Array>}\n ",
+            "start": 73,
+            "end": 395,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 0
+              },
+              "end": {
+                "line": 15,
+                "column": 3
+              }
+            }
+          }
+        ]
       }
     ],
     "directives": []
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Loads multiple files and output an array with the objects\n * @param {Array<string>} urls\n * @param {boolean} sequential\n *\n * @example\n *  loadScriptAll(['./mycustomScript.js', './mycustomScript2.js', './mycustomScript3.js'], true);\n *\n *  loadScriptAll(['./mycustomScript.png']);\n *\n * @return {Promise<Array>}\n ",
+      "start": 73,
+      "end": 395,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    }
+  ],
   "tokens": [
     {
       "type": {
@@ -675,6 +746,22 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\n * Loads multiple files and output an array with the objects\n * @param {Array<string>} urls\n * @param {boolean} sequential\n *\n * @example\n *  loadScriptAll(['./mycustomScript.js', './mycustomScript2.js', './mycustomScript3.js'], true);\n *\n *  loadScriptAll(['./mycustomScript.png']);\n *\n * @return {Promise<Array>}\n ",
+      "start": 73,
+      "end": 395,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
       "type": {
         "label": "export",
         "keyword": "export",
@@ -689,15 +776,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 73,
-      "end": 79,
+      "start": 396,
+      "end": 402,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 0
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 6
         }
       }
@@ -717,15 +804,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 80,
-      "end": 87,
+      "start": 403,
+      "end": 410,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 7
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 14
         }
       }
@@ -744,15 +831,15 @@
         "binop": null
       },
       "value": "function",
-      "start": 88,
-      "end": 96,
+      "start": 411,
+      "end": 419,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 15
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 23
         }
       }
@@ -770,15 +857,15 @@
         "binop": null
       },
       "value": "loadScriptAll",
-      "start": 97,
-      "end": 110,
+      "start": 420,
+      "end": 433,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 24
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 37
         }
       }
@@ -795,15 +882,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 110,
-      "end": 111,
+      "start": 433,
+      "end": 434,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 37
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 38
         }
       }
@@ -821,15 +908,15 @@
         "binop": null
       },
       "value": "urls",
-      "start": 111,
-      "end": 115,
+      "start": 434,
+      "end": 438,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 38
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 42
         }
       }
@@ -847,15 +934,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 115,
-      "end": 116,
+      "start": 438,
+      "end": 439,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 42
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 43
         }
       }
@@ -873,15 +960,15 @@
         "binop": null
       },
       "value": "sequential",
-      "start": 117,
-      "end": 127,
+      "start": 440,
+      "end": 450,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 44
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 54
         }
       }
@@ -900,15 +987,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 128,
-      "end": 129,
+      "start": 451,
+      "end": 452,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 55
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 56
         }
       }
@@ -928,15 +1015,15 @@
         "updateContext": null
       },
       "value": "false",
-      "start": 130,
-      "end": 135,
+      "start": 453,
+      "end": 458,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 57
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 62
         }
       }
@@ -953,15 +1040,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 135,
-      "end": 136,
+      "start": 458,
+      "end": 459,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 62
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 63
         }
       }
@@ -978,15 +1065,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 137,
-      "end": 138,
+      "start": 460,
+      "end": 461,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 16,
           "column": 64
         },
         "end": {
-          "line": 4,
+          "line": 16,
           "column": 65
         }
       }
@@ -1006,15 +1093,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 141,
-      "end": 147,
+      "start": 464,
+      "end": 470,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 17,
           "column": 2
         },
         "end": {
-          "line": 5,
+          "line": 17,
           "column": 8
         }
       }
@@ -1032,15 +1119,15 @@
         "binop": null
       },
       "value": "loadAll",
-      "start": 148,
-      "end": 155,
+      "start": 471,
+      "end": 478,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 17,
           "column": 9
         },
         "end": {
-          "line": 5,
+          "line": 17,
           "column": 16
         }
       }
@@ -1057,15 +1144,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 155,
-      "end": 156,
+      "start": 478,
+      "end": 479,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 17,
           "column": 16
         },
         "end": {
-          "line": 5,
+          "line": 17,
           "column": 17
         }
       }
@@ -1083,15 +1170,15 @@
         "binop": null
       },
       "value": "urls",
-      "start": 156,
-      "end": 160,
+      "start": 479,
+      "end": 483,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 17,
           "column": 17
         },
         "end": {
-          "line": 5,
+          "line": 17,
           "column": 21
         }
       }
@@ -1109,15 +1196,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 160,
-      "end": 161,
+      "start": 483,
+      "end": 484,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 17,
           "column": 21
         },
         "end": {
-          "line": 5,
+          "line": 17,
           "column": 22
         }
       }
@@ -1135,15 +1222,15 @@
         "binop": null
       },
       "value": "sequential",
-      "start": 162,
-      "end": 172,
+      "start": 485,
+      "end": 495,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 17,
           "column": 23
         },
         "end": {
-          "line": 5,
+          "line": 17,
           "column": 33
         }
       }
@@ -1161,15 +1248,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 172,
-      "end": 173,
+      "start": 495,
+      "end": 496,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 17,
           "column": 33
         },
         "end": {
-          "line": 5,
+          "line": 17,
           "column": 34
         }
       }
@@ -1187,15 +1274,15 @@
         "binop": null
       },
       "value": "loadScript",
-      "start": 174,
-      "end": 184,
+      "start": 497,
+      "end": 507,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 17,
           "column": 35
         },
         "end": {
-          "line": 5,
+          "line": 17,
           "column": 45
         }
       }
@@ -1212,15 +1299,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 184,
-      "end": 185,
+      "start": 507,
+      "end": 508,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 17,
           "column": 45
         },
         "end": {
-          "line": 5,
+          "line": 17,
           "column": 46
         }
       }
@@ -1238,15 +1325,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 185,
-      "end": 186,
+      "start": 508,
+      "end": 509,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 17,
           "column": 46
         },
         "end": {
-          "line": 5,
+          "line": 17,
           "column": 47
         }
       }
@@ -1263,15 +1350,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 187,
-      "end": 188,
+      "start": 510,
+      "end": 511,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 18,
           "column": 0
         },
         "end": {
-          "line": 6,
+          "line": 18,
           "column": 1
         }
       }
@@ -1289,15 +1376,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 189,
-      "end": 189,
+      "start": 512,
+      "end": 512,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 19,
           "column": 0
         },
         "end": {
-          "line": 7,
+          "line": 19,
           "column": 0
         }
       }

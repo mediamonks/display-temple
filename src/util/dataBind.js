@@ -31,6 +31,12 @@ function getValue(model, path) {
  * @param {object} model
  * @param {HTMLElement} element
  * @param {boolean} isObservable
+ *
+ * @example
+ * data-bind="html: text" , applies html to a element from the property text.
+ * data-bind="src: logo.Url" , applies src to a element from the property logo.Url.
+ * data-bind="href: logo.Url" , applies href to a element from the property logo.Url.
+ * data-bind="style.backgroundColor: bgcolor" , applies style.backgroundColor to a element from the property bgcolor.
  */
 function dataBind(model, element, isObservable = false) {
   const elements = element.querySelectorAll('[data-bind]');

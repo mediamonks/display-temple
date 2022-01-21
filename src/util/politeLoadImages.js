@@ -3,6 +3,10 @@ import loadAll from './loadAll';
 /**
  * Will search for all child elements with a attribute data-src and will load it change it to .src,
  * @param {HTMLElement} element
+ *
+ * @example
+ *  politeLoadImages(document.querySelector('svg'))
+ *
  * @return {Promise<void>}
  */
 export default async function politeLoadImages(element) {

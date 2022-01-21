@@ -1,11 +1,17 @@
 import load from './load';
 
 /**
- * loadAll
+ * Loads multiple files and output an array with the objects
  * @param {Array<string>} urls
  * @param {boolean} sequential
  * @param {function} loader
- * @return {Promise<unknown[]>|*}
+ *
+ * @example
+ *  loadAll(['./my_example_image.png', './my_example_image2.png', './my_example_image3.png'], true);
+ *
+ *  loadAll(['./custom_image.png']);
+ *
+ * @return {Promise<Array>}
  */
 export default function loadAll(urls, sequential = false, loader = load) {
   if (sequential) {

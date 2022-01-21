@@ -3,6 +3,12 @@
  *
  * @param {String} url Script file url. A string array of url's also possible.
  * @param {Object} [opt] Callback function when file loaded.
+ *
+ * @example
+ *  loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js')
+ *    .then((file) => console.log(file)
+ *  );
+ *
  * @retun {Promise}
  */
 export default function loadScript(url, opts = {}) {
