@@ -91,19 +91,10 @@ export default class FrameAnimation {
   }
 
   timelineOnStartHandler() {
-    // IE11 fix
-    function CustomEvent ( event, params ) {
-      params = params || { bubbles: false, cancelable: false, detail: undefined };
-      var evt = document.createEvent( 'CustomEvent' );
-      evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
-      return evt;
+    // IE11 fix checking if custom events excists
+    if ('CustomEvent' in window && 'function' == typeof window.CustomEvent) {
+      window.dispatchEvent(new CustomEvent("getMainTimeline", {'detail': this}));
     }
-    CustomEvent.prototype = window.Event.prototype;
-
-    window.CustomEvent = CustomEvent;
-    //end IE11 fix
-
-    window.dispatchEvent(new CustomEvent("getMainTimeline", {'detail': this}));
   }
 
   /**
