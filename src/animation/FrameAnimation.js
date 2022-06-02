@@ -72,7 +72,8 @@ export default class FrameAnimation {
       }
     }
     //add an onStart event for the QA gsdevtools debugger in the preview page
-    timeline.eventCallback("onStart", this.timelineOnStartHandler)
+    timeline.eventCallback('onStart', this.timelineOnStartHandler);
+    timeline.eventCallback('onComplete', this.timelineOnCompleteHandler);
 
     return timeline;
   }
@@ -93,7 +94,15 @@ export default class FrameAnimation {
   timelineOnStartHandler() {
     // IE11 fix checking if custom events excists
     if ('CustomEvent' in window && 'function' == typeof window.CustomEvent) {
-      window.dispatchEvent(new CustomEvent("getMainTimeline", {'detail': this}));
+      window.dispatchEvent(new CustomEvent('onStartAnimation', { detail: this }));
+      window.dispatchEvent(new CustomEvent('getMainTimeline', { detail: this }));
+    }
+  }
+
+  timelineOnCompleteHandler() {
+    // IE11 fix checking if custom events excists
+    if ('CustomEvent' in window && 'function' == typeof window.CustomEvent) {
+      window.dispatchEvent(new CustomEvent('onCompleteAnimation', { detail: this }));
     }
   }
 
