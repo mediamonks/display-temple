@@ -6,31 +6,27 @@
  */
 
 export default function enableAdsRecorder(animation, config) {
-  const animationRecordEvent = new CustomEvent('animation-record');
-  const animationCompleteEvent = new CustomEvent('animation-end');
+  const animationConfig = {
+    duration: animation.duration(),
+    width: config.settings.size.width,
+    height: config.settings.size.height,
+  };
 
-  document.dispatchEvent(
-    new CustomEvent('animation-info', {
-      detail: {
-        duration: animation.duration(),
-        width: config.settings.size.width,
-        height: config.settings.size.height,
-      },
-    }),
-  );
+  window.addEventListener('message', event => {
+    const { data } = event;
+    if (data.name === 'request-animation-config') {
+      window.postMessage({
+        name: 'animation-config',
+        ...animationConfig,
+      });
+    }
 
-  document.addEventListener(`animation-info-received`, function(e) {
-    animation.pause(0); // start at 0
-    document.dispatchEvent(animationRecordEvent); // send request to record this frame
-
-    document.addEventListener(`animation-gotoframe-request`, function(e) {
-      animation.pause(e.detail / 1000);
-
-      if (e.detail / 1000 <= animation.duration()) {
-        document.dispatchEvent(animationRecordEvent);
-      } else {
-        document.dispatchEvent(animationCompleteEvent);
-      }
-    });
+    if (data.name === 'request-goto-frame') {
+      animation.pause(data.frame / 1000);
+      window.postMessage({
+        name: 'current-frame',
+        frame: data.frame,
+      });
+    }
   });
 }
