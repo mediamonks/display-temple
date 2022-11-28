@@ -12,14 +12,13 @@ export default function enableAdsRecorder(animation, config) {
     height: config.settings.size.height,
   };
 
+  window.postMessage({
+    name: 'animation-ready',
+    ...animationConfig,
+  });
+
   window.addEventListener('message', event => {
     const { data } = event;
-    if (data.name === 'request-animation-config') {
-      window.postMessage({
-        name: 'animation-config',
-        ...animationConfig,
-      });
-    }
 
     if (data.name === 'request-goto-frame') {
       animation.pause(data.frame / 1000, false);
