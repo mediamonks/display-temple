@@ -22,7 +22,7 @@ export default function enableAdsRecorder(animation, config) {
     }
 
     if (data.name === 'request-goto-frame') {
-      animation.pause(data.frame / 1000);
+      animation.pause(data.frame / 1000, false);
       window.postMessage({
         name: 'current-frame',
         frame: data.frame,
