@@ -22,8 +22,6 @@ export default function displayAdDevTools(animation) {
   let playPauseButton = document.querySelector('.play-pause');
   let playPauseMorph = gsap.timeline();
 
-  console.log('hi');
-
   //load draggable, only when using this scrubber
   loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/Draggable.min.js').then(
     initDisplayAdDevTools,
