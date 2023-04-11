@@ -5,7 +5,7 @@
  */
 
 import loadScript from './loadScript';
-export default function displayAdDevTools(animation) {
+export default function timelineScrubber(animation) {
   let dragging = false;
   let paused = false;
   let hidden = false;
