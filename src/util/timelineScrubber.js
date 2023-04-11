@@ -1,7 +1,7 @@
 /**
  * Simple and free custom devtools timeline scrubber to control your main gsap timeline
  *
- * @param {String} animation GSAP Timeline.
+ * @param {Object} animation GSAP Timeline.
  */
 
 import loadScript from './loadScript';
@@ -24,10 +24,10 @@ export default function timelineScrubber(animation) {
 
   //load draggable, only when using this scrubber
   loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/Draggable.min.js').then(
-    initDisplayAdDevTools,
+    init,
   );
 
-  function initDisplayAdDevTools() {
+  function init() {
     addStyling();
     createDraggableScrubber();
   }
