@@ -1,6 +1,8 @@
 // eslint-disable-next-line import/no-unresolved
 const methodNameMatch = /(frame)(\d+)(In|Out|)$/;
 
+const previewReady = new Promise(resolve => { window.addEventListener('previewReady', resolve) })
+
 /**
  *
  */
@@ -94,6 +96,7 @@ export default class FrameAnimation {
     // IE11 fix checking if custom events excists
     if ('CustomEvent' in window && 'function' == typeof window.CustomEvent) {
       window.dispatchEvent(new CustomEvent("getMainTimeline", {'detail': this}));
+      previewReady.then(() => window.dispatchEvent(new CustomEvent("getMainTimeline", { 'detail': this })))
     }
   }
 
